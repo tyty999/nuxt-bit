@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-ssr-bitsrc",
+  "version": "1.0.0",
+  "description": "My top-notch Nuxt.js project",
+  "author": "TNieminen",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@bit/akkadu.public.buttons.button-base": "^0.0.6",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {},
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "overrides": {
+      "akkadu.public/buttons/button-base": {
+        "env": {
+          "compiler": "bit.envs/bundlers/vue@2.6.15"
+        }
+      },
+      "akkadu.public/progress/index": {
+        "env": {
+          "compiler": "bit.envs/bundlers/vue@2.6.15"
+        }
+      }
+    }
+  }
+}
