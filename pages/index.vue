@@ -14,7 +14,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import ButtonBase from '@bit/akkadu.public.buttons.button-base'
+import ButtonBase from '@bit/akkadu.public.buttons.button-base/button-base.vue'
 
 export default {
   components: {
